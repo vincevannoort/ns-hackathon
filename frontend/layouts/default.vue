@@ -1,17 +1,15 @@
 <template>
   <div class="app">
     <nuxt />
-    <div class="footer">
-      <nuxt-link to="/conducteur">overzicht</nuxt-link>
-      <nuxt-link to="">item</nuxt-link>
-      <nuxt-link to="">account</nuxt-link>
-    </div>
+    <footer-passagier v-if="$route.path.includes('passagier')" />
+    <footer-conducteur v-else />
   </div>
 </template>
 
 <style lang="scss">
 .app { padding: 1.5rem; }
 html, body { min-height: 100vh; background: #ffc917; }
+body { padding-bottom: 5rem; }
 .box { padding: 1rem; margin-bottom: 1.5rem; }
 .title, .subtitle, .is-1, .is-2, .is-3, .is-4, .is-5, .is-6 { color: black; }
 .button { background: #0063d3; color: white; min-width: 100%; }
