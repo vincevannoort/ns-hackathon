@@ -2,18 +2,24 @@
   <div class="app">
     <nuxt />
     <div class="footer">
-      <div>overzicht</div>
+      <nuxt-link to="/conducteur">overzicht</nuxt-link>
+      <nuxt-link to="">item</nuxt-link>
+      <nuxt-link to="">account</nuxt-link>
     </div>
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .app { padding: 1.5rem; }
 html, body { min-height: 100vh; background: #ffc917; }
 .box { padding: 1rem; margin-bottom: 1.5rem; }
 .title, .subtitle, .is-1, .is-2, .is-3, .is-4, .is-5, .is-6 { color: black; }
 .button { background: #0063d3; color: white; min-width: 100%; }
-.footer { display: flex; justify-content: center; align-items: center; background: white; position: fixed; height: 2rem; left: 0; width: 100vw; }
+.footer { padding: 2rem; height: 5rem; display: flex; justify-content: center; align-items: center; background: white; position: fixed; left: 0; width: 100vw; bottom: 0;
+  a { padding: 1rem;
+    &.nuxt-link-exact-active { color: #0063d3; }
+  }
+}
 
 .page-enter-active, .page-leave-active { transition-property: opacity; transition-timing-function: ease-in-out; transition-duration: 250ms; }
 .page-enter, .page-leave-to { opacity: 0; }
