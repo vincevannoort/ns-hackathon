@@ -7,8 +7,11 @@
 <style>
 .app { padding: 1.5rem; }
 html, body { min-height: 100vh; background: #ffc917; }
-.box { padding: 1rem; }
+.box { padding: 1rem; margin-bottom: 1.5rem; }
 .title, .subtitle, .is-1, .is-2, .is-3, .is-4, .is-5, .is-6 { color: black; }
+
+.page-enter-active, .page-leave-active { transition-property: opacity; transition-timing-function: ease-in-out; transition-duration: 250ms; }
+.page-enter, .page-leave-to { opacity: 0; }
 
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

@@ -14,8 +14,14 @@ export default {
   data: function () {
     return {
       meldingen: [
-        { categorie: 'Veiligheid', titel: 'Er is een gevecht gaande tussen 2 medereizigers in coupe 2.' },
-        { categorie: 'Hygïene', titel: 'Er zijn meerdere mensen aan het kotsen aaaah!' },
+        {
+          categorie: 'Veiligheid',
+          titel: 'Er is een gevecht gaande tussen 2 medereizigers in coupe 2.'
+        },
+        {
+          categorie: 'Hygïene',
+          titel: 'Er zijn meerdere mensen aan het kotsen aaaah!'
+        },
       ],
     }
   },
