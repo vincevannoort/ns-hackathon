@@ -10,13 +10,7 @@
         <tr><td>Aantal mensen:</td><td>2</td></tr>
       </table>
     </div>
-    <div class="box">
-      <h5 class="is-5">Uitgevoerde acties</h5>
-      <div class="melding__actie" v-for="actieGedaan in melding.actiesGedaan" :key="actieGedaan.actie">
-        <div class="melding__actie__tijd">{{ actieGedaan.tijd }}</div>
-        <div>{{ actieGedaan.actie }}</div>
-      </div>
-    </div>
+    <uitgevoerde-acties :actiesGedaan="melding.actiesGedaan" />
     <div class="box">
       <h5 class="is-5">Acties</h5>
       <b-button>Stuur melding naar beveiliging</b-button>
