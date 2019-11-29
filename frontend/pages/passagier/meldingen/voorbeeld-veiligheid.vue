@@ -3,7 +3,7 @@
     <div class="header-buttons" @click="$router.back()">back</div>
     <div class="header-buttons" id="feedback" @click="openFeedback">feedback</div>
     <feedback :displayFeedback="displayFeedback" @closeFeedback="closeFeedback"  />
-    <melding-conducteur :melding="melding" />
+    <melding-passagier :melding="melding" />
     <uitgevoerde-acties :actiesGedaan="melding.actiesGedaan" />
   </div>
 </template>
