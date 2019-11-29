@@ -1,8 +1,11 @@
 <template>
   <div class="app">
     <nuxt />
-    <footer-passagier v-if="$route.path.includes('passagier')" />
-    <footer-conducteur v-else />
+    <div v-if="$route.path !== '/'">
+      <footer-passagier v-if="$route.path.includes('passagier')" />
+      <footer-conducteur v-else />
+    </div>
+    <div v-else></div>
   </div>
 </template>
 
