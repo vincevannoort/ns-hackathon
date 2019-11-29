@@ -3,7 +3,7 @@
     <div>
       <h3 class="title is-3">Overzicht <br>meldingen</h3>
       <div style="margin-bottom: 1rem;">
-
+        <!-- TODO: hide this one -->
         <div @click="dummyMeldingToevoegen">dummy melding toevoegen</div>
       </div>
     </div>

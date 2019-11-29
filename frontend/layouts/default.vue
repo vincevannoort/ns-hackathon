@@ -1,6 +1,9 @@
 <template>
   <div class="app">
     <nuxt />
+    <div class="footer">
+      <div>overzicht</div>
+    </div>
   </div>
 </template>
 
@@ -10,6 +13,7 @@ html, body { min-height: 100vh; background: #ffc917; }
 .box { padding: 1rem; margin-bottom: 1.5rem; }
 .title, .subtitle, .is-1, .is-2, .is-3, .is-4, .is-5, .is-6 { color: black; }
 .button { background: #0063d3; color: white; min-width: 100%; }
+.footer { display: flex; justify-content: center; align-items: center; background: white; position: fixed; height: 2rem; left: 0; width: 100vw; }
 
 .page-enter-active, .page-leave-active { transition-property: opacity; transition-timing-function: ease-in-out; transition-duration: 250ms; }
 .page-enter, .page-leave-to { opacity: 0; }
