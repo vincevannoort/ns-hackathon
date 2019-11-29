@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Staff</title>
+  </head>
+  <body>
+    <button id="send" type="button" title="Send solution to customer">
+      Yeet that response
+    </button>
+    <pre id="messages" style="height: 400px; overflow: scroll"></pre>
+    <script>
+
+fetch('/staff', { method: 'POST', credentials: 'same-origin' })
+  .then(res => {
+    return res.ok
+      ? res.json().then(data => JSON.stringify(data, null, 2))
+      : Promise.reject(new Error('Unexpected response'));
+  })
+  .then(message => console.log(message))
+  .catch(err => {
+    console.error(err.message);
+  });
+
+let socket = new WebSocket(`ws://${location.host}`);
+
+socket.onerror = () => {
+  console.error('WebSocket error');
+};
+
+socket.onopen = () => {
+  console.log('WebSocket connection established');
+};
+
+socket.onmessage = evt => {
+  console.log(evt.data);
+
+  socket.send("Hello server")
+}
+
+    </script>
+  </body>
+</html>
