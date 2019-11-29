@@ -28,7 +28,7 @@ app.post('/customer', (req, res) => {
   user = id;
 
   req.session.userId = id;
-  res.send({ message: 'Conection established' });
+  res.send({ message: 'Connection established' });
 });
 
 app.post('/staff', (req, res) => {
@@ -39,7 +39,7 @@ app.post('/staff', (req, res) => {
   staff = id;
 
   req.session.userId = id;
-  res.send({ message: 'Conection established' });
+  res.send({ message: 'Connection established' });
 });
 
 const server = http.createServer(app);

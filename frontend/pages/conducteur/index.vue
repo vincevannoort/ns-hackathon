@@ -16,6 +16,23 @@
 
 <script>
 export default {
+
+  computed: {
+    wss: function() {
+      const wss = new WebSocket.Server({port: 3000})
+
+      wss.on('connection', (ws, request) => {
+        console.log("Connected")
+        ws.onmessage(ev => {
+          console.log("Message", ev)
+          this.meldingen.push(ev.data)
+        })
+      })
+
+      return wss
+    }
+  },
+
   data: function () {
     return {
       meldingen: [

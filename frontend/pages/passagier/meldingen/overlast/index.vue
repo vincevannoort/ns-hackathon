@@ -2,10 +2,11 @@
   <div class="container">
     <div @click="$router.back()">back</div>
     <div class="box">
-      <h5 class="is-5">Melding: Veiligheid</h5>
+      <h5 class="is-5">Melding: Overlast</h5>
       <b-button class="form-item">Geweld</b-button>
       <b-button class="form-item">Dronken reiziger</b-button>
       <b-button class="form-item">Bedelaar</b-button>
+      <nuxt-link tag="b-button" to="/passagier/meldingen/overlast/lawaai" class="form-item">Lawaai</nuxt-link>
       <b-button class="form-item">Anders</b-button>
     </div>
   </div>

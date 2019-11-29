@@ -4,7 +4,7 @@
     <div class="box">
       <h5 class="is-5">Waar gaat het over?</h5>
       <b-button class="form-item">Informatie</b-button>
-      <nuxt-link tag="b-button" to="/passagier/meldingen/veiligheid" class="form-item">Veiligheid</nuxt-link>
+      <nuxt-link tag="b-button" to="/passagier/meldingen/overlast" class="form-item">Overlast</nuxt-link>
       <b-button class="form-item">Hygiene</b-button>
     </div>
   </div>
