@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link to="/conducteur/meldingen/voorbeeld-veiligheid">
+  <nuxt-link to="/passagier/meldingen/voorbeeld-veiligheid">
     <div class="melding box">
       <div class="melding__top">
         <div class="melding__informatie">
