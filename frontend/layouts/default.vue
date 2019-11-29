@@ -1,13 +1,14 @@
 <template>
-  <div class="container">
+  <div class="app">
     <nuxt />
   </div>
 </template>
 
 <style>
-.container { padding: 0.5rem; }
+.app { padding: 1.5rem; }
 html, body { min-height: 100vh; background: #ffc917; }
-.box { padding: 0.75rem; }
+.box { padding: 1rem; }
+.title, .subtitle, .is-1, .is-2, .is-3, .is-4, .is-5, .is-6 { color: black; }
 
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',

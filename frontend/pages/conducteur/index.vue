@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div>
-      conducteur
+      <h3 class="title is-3">Overzicht <br>meldingen</h3>
     </div>
     <div class="meldingen__overzicht">
       <melding :melding="melding" v-for="melding in meldingen" :key="melding" />
@@ -14,14 +14,15 @@ export default {
   data: function () {
     return {
       meldingen: [
-        { text: 'test 1' },
-        { text: 'test 2' }
+        { categorie: 'Veiligheid', titel: 'Er is een gevecht gaande tussen 2 medereizigers in coupe 2.' },
+        { categorie: 'Hygïene', titel: 'Er zijn meerdere mensen aan het kotsen aaaah!' },
       ],
     }
   },
 }
 </script>
 
-<style>
+<style lang="scss" scoped>
 .meldingen__overzicht { display: flex; flex-direction: column; }
+h3 { margin-bottom: 2rem; }
 </style>
