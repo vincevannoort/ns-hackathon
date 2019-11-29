@@ -4,7 +4,7 @@
       <h3 class="title is-3">Overzicht <br>meldingen</h3>
     </div>
     <div class="meldingen__overzicht">
-      <melding :melding="melding" v-for="melding in meldingen" :key="melding" />
+      <melding-conducteur :melding="melding" v-for="melding in meldingen" :key="melding" />
     </div>
   </div>
 </template>

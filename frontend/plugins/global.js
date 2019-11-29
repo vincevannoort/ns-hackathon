@@ -1,4 +1,4 @@
 import Vue from 'vue'
-import Melding from '../components/Melding.vue'
+import MeldingConducteur from '../components/MeldingConducteur.vue'
 
-Vue.component('melding', Melding)
+Vue.component('melding-conducteur', MeldingConducteur)
