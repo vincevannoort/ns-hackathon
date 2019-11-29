@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    back
+    <div @click="$router.back()">back</div>
     <melding-conducteur :melding="melding" />
     <uitgevoerde-acties :actiesGedaan="melding.actiesGedaan" />
   </div>
